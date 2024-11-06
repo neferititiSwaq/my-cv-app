@@ -1,0 +1,225 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.cv-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cv-container:hover {
+  transform: scale(1.02);
+}
+
+/* Left and Right Columns */
+.left-column,
+.right-column {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left-column:hover,
+.right-column:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #495057;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: rotate(5deg);
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-text {
+  flex: 1; 
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.profile-summary {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button,
+a {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+a:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Text Transitions */
+h2 {
+  color: #495057;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #007bff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .profile-pic {
+    margin-bottom: 10px;
+  }
+}
+
+/* PDF Download Button */
+.pdf-download {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pdf-download a {
+  background-color: lightblue;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-download a:hover {
+  background-color: #007bff;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 20px;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact li span {
+  margin-left: 10px;
+}
+
+.contact li svg {
+  color: #0073e6;
+  font-size: 1.2em;
+}
+
+/* Dark Mode */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: black;
+}
+
+.cv-container,
+.left-column,
+.right-column {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Specific Styles for Skills and Experience */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
