@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# My CV App
+
+This is a React-based CV application that showcases my personal information, including professional skills, projects and contact details.
+
+## Features
+- Displays personal information
+- Contact links for LinkedIn, GitHub, and Email
+- Styled with Tailwind CSS and React-Bootstrap.
+- Responsive design for all screen sizes
+
 ## Available Scripts
 
 In the project directory, you can run:
